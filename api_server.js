@@ -23,7 +23,6 @@ module.exports = (req, res) => {
     return;
   }
 
-  // 其他 API
   res.writeHead(404, { "Content-Type": "application/json" });
   res.end(JSON.stringify({ error: "API route not found" }));
 };
